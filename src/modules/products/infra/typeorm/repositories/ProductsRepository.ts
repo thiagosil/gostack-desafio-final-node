@@ -53,9 +53,6 @@ class ProductsRepository implements IProductsRepository {
         return product;
       }
 
-      console.log(`Quantity before: ${product.quantity}`);
-      console.log(`Quantity after ${product.quantity - findProduct.quantity}`);
-
       return {
         ...product,
         quantity: product.quantity - findProduct.quantity,
